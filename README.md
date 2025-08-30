@@ -10,16 +10,16 @@ This project extends TortoiseBot’s LIDAR capabilities by enabling it to **foll
 - Calculates **direction and distance** of the object  
 - Publishes velocity commands to `/cmd_vel` to slowly follow the ball  
 - Aligns itself by turning if the object is off-center  
-- Moves forward when the ball is centered  
-
+- Moves forward when the ball is centered
+  
+  Click [here](https://youtu.be/KUTT6o2aveo)to watch the output video.
+  
 ---
 
 ## System Requirements
 - **OS**: Ubuntu 24.04  
 - **ROS 2**: Jazzy Jalisco  
 - **Simulator**: Gazebo Harmonic  
-- **Python**: 3.10+  
-- **Robot**: TortoiseBot with LIDAR  
 
 ---
 
@@ -47,7 +47,7 @@ source install/setup.bash
 
 ---
 
-## Usage
+## Simulation
 
 ### 1. Launch Simulation
 
@@ -56,6 +56,9 @@ Start TortoiseBot in Gazebo with LIDAR:
 ```bash
 ros2 launch tortoisebot_gazebo tortoisebot_world.launch.py
 ```
+![]()
+
+
 
 Spawn a red ball in front of the robot (URDF/SDF sphere with color property).
 
@@ -116,9 +119,3 @@ Ball centered, moving forward...
 
 MIT License
 
-```
-
----
-
-👉 Azar, do you also want me to **bundle the LIDAR tracker + ball follower in one repo** (two nodes in the same package), or should I keep **only the ball follower** for this repo?
-```
