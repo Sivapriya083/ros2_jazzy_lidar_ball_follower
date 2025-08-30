@@ -80,20 +80,36 @@ The node will:
 ---
 
 ### 3. Teleop Control (Manual Override)
+---
 
-If you want to manually drive the robot:
+### **Default Keyboard Controls (`teleop_twist_keyboard`)**
 
-```bash
-ros2 run teleop_twist_keyboard teleop_twist_keyboard
-```
+* **Movement:**
 
-Control keys:
+  * `i` → move forward
+  * `,` → move backward
+  * `j` → turn left
+  * `l` → turn right
+  * `u` → move forward-left (diagonal)
+  * `o` → move forward-right
+  * `m` → move backward-left
+  * `.` → move backward-right
 
-* `w` → forward
-* `s` → backward
-* `a` → turn left
-* `d` → turn right
-* `space` → stop
+* **Stop:**
+
+  * `k` → stop
+
+* **Speed Adjustments:**
+
+  * `q` → increase linear speed
+  * `z` → decrease linear speed
+  * `w` → increase angular speed
+  * `x` → decrease angular speed
+
+* **Exit:**
+
+  * `CTRL+C` → quit the node
+
 
 ---
 
